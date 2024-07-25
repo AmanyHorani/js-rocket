@@ -1,3 +1,7 @@
+setTimeout(function () {
+    location.href = 'rocket.html';
+}, 2000);
+
 var doCoolStuff = function() {
     // changes color between green and red
     var currentClassName = document.getElementById('cool').className;

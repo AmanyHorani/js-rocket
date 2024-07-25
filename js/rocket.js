@@ -10,6 +10,11 @@ var changeState = function (state) {
 
     // countdown
     if (state == 2) {
+        document.querySelector('.tree').style.display = 'none';
+        document.querySelector('.tree-blown').style.display = 'block';
+        document.querySelector('.tree2').style.display = 'none';
+        document.querySelector('.tree-blown-flip').style.display = 'block';
+
         timer = setInterval(function() {
             countdownNumber= countdownNumber-1;
             document.getElementById('countdown').innerHTML = countdownNumber;
@@ -40,7 +45,7 @@ var changeState = function (state) {
             console.log('randomNumber:', randomNumber)
 
             // success
-            if (randomNumber > 5) {
+            if (randomNumber > 2) {
                 changeState(4);
             } else {
                 changeState(5); // oh no!
