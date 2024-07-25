@@ -155,7 +155,7 @@ a:hover {
 }
 
 .building {
-    background: url('../img/building2.png') no-repeat center 0;
+    background: url('../img/building.png') no-repeat center 0;
     position: absolute;
     bottom: 60px;
     left: -20px;
