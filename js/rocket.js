@@ -10,10 +10,7 @@ var changeState = function (state) {
 
     // countdown
     if (state == 2) {
-        document.querySelector('.tree').style.display = 'none';
-        document.querySelector('.tree-blown').style.display = 'block';
-        document.querySelector('.tree2').style.display = 'none';
-        document.querySelector('.tree-blown-flip').style.display = 'block';
+        
 
         timer = setInterval(function() {
             countdownNumber= countdownNumber-1;
@@ -39,6 +36,10 @@ var changeState = function (state) {
         }, 500);
         
     } else if (state == 3) {
+document.querySelector('.tree').style.display = 'none';
+        document.querySelector('.tree-blown').style.display = 'block';
+        document.querySelector('.tree2').style.display = 'none';
+        document.querySelector('.tree-blown-flip').style.display = 'block';
         var success = setTimeout(function () {
             var randomNumber = Math.round(Math.random()*10);
 
@@ -51,6 +52,6 @@ var changeState = function (state) {
                 changeState(5); // oh no!
 
             }
-        }, 2000);
+        }, 2000);  
     };
 }
